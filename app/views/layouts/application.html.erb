@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Proy3</title>
+    <title>Primer Proyecto</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,15 @@
   </head>
 
   <body>
+  <nav class="navbar-inverse">PROYECTO 3 LINKS
+
+  <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item"><%= link_to "one", pages_one_path %></li>
+        <li class="nav-item"><%= link_to "two", pages_two_path %></li>
+        <li class="nav-item"><%= link_to "three", pages_three_path %></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
